@@ -4,458 +4,244 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Alpana Jha, content strategist and editorial writer. Portfolio of case studies, whitepapers, blogs, campaigns, content strategy, social media and CMS work.">
-  <meta name="theme-color" content="#0d0e14">
+  <meta name="theme-color" content="#fbfbf7">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Alpana Jha, Content Strategist and Writer">
   <meta property="og:description" content="Content strategy, case studies, whitepapers, campaigns, social media and CMS work written to be read.">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c9dff'/%3E%3Cstop offset='0.55' stop-color='%23a78bfa'/%3E%3Cstop offset='1' stop-color='%23c4b5fd'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='50' font-family='Georgia,serif' font-weight='700' fill='%230d0e14' text-anchor='middle'%3EAJ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='5' y='5' width='90' height='90' rx='10' fill='%23111111' stroke='%2316c60c' stroke-width='6'/%3E%3Ctext x='50' y='68' font-size='44' font-family='Arial Black,sans-serif' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EAJ%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Alpana Jha, Content Strategist and Writer</title>
   <style>
     :root {
-      --bg: #0b0c12;
-      --surface: rgba(255, 255, 255, 0.035);
-      --surface-2: rgba(255, 255, 255, 0.06);
-      --line: rgba(255, 255, 255, 0.1);
-      --line-strong: rgba(255, 255, 255, 0.18);
-      --text: #eef0f7;
-      --muted: #a3a7bd;
-      --faint: #6d7189;
-      --c1: #7c9dff;
-      --c2: #a78bfa;
-      --c3: #6ee7d6;
-      --c4: #5eead4;
-      --grad: linear-gradient(100deg, #7c9dff, #a78bfa 55%, #c4b5fd 95%);
-      --grad-soft: linear-gradient(135deg, rgba(124,157,255,0.14), rgba(167,139,250,0.12) 55%, rgba(110,231,214,0.1));
-      --glow-blue: rgba(124, 157, 255, 0.35);
-      --glow-violet: rgba(167, 139, 250, 0.3);
-      --display: "Newsreader", Georgia, "Times New Roman", serif;
-      --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-      --label: "Inter", ui-sans-serif, system-ui, sans-serif;
-      --radius: 20px;
-      --shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+      --paper: #fbfbf7;
+      --ink: #111111;
+      --blue: #2b4bff;
+      --blue-deep: #1e37cc;
+      --green: #16c60c;
+      --yellow: #ffd60a;
+      --muted: #5b5b57;
+      --faint: #8a8a84;
+      --grid: #e7e7e0;
+      --shadow: 5px 5px 0 var(--ink);
+      --shadow-lg: 8px 8px 0 var(--ink);
+      --display: "Anton", "Arial Black", sans-serif;
+      --head: "Archivo", ui-sans-serif, system-ui, sans-serif;
+      --body: "Inter", ui-sans-serif, system-ui, sans-serif;
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--sans);
-      line-height: 1.6;
-      overflow-x: hidden;
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: var(--body); line-height: 1.6; overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
-
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 40px 40px; opacity: 0.7;
+    }
     a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--yellow); color: var(--ink); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
-    ::selection { background: rgba(167, 139, 250, 0.32); color: #fff; }
+    .shell { width: min(1160px, calc(100% - 40px)); margin: 0 auto; position: relative; z-index: 1; }
 
-    .sr-only {
-      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    .eyebrow { font-family: var(--head); font-weight: 800; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue); }
+
+    /* ---------- buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px; padding: 13px 22px;
+      font-family: var(--head); font-weight: 700; font-size: 15px;
+      border: 2px solid var(--ink); background: #fff; color: var(--ink); cursor: pointer;
+      box-shadow: var(--shadow); transition: transform 130ms ease, box-shadow 130ms ease, background 130ms ease, color 130ms ease;
     }
-
-    /* ---------- animated background ---------- */
-    .bg-fx { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
-    .blob {
-      position: absolute;
-      width: 46vw; height: 46vw;
-      border-radius: 50%;
-      filter: blur(96px);
-      opacity: 0.42;
-      mix-blend-mode: screen;
-      animation: float 24s ease-in-out infinite;
-    }
-    .blob.b1 { background: var(--c1); top: -12%; left: -8%; }
-    .blob.b2 { background: var(--c2); top: 18%; right: -14%; animation-delay: -6s; }
-    .blob.b3 { background: var(--c3); bottom: -18%; left: 22%; animation-delay: -12s; opacity: 0.32; }
-    .blob.b4 { background: var(--c1); bottom: 6%; right: 14%; width: 32vw; height: 32vw; animation-delay: -3s; opacity: 0.28; }
-
-    @keyframes float {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33% { transform: translate(5%, 8%) scale(1.12); }
-      66% { transform: translate(-6%, -4%) scale(0.94); }
-    }
-
-    .bg-grid {
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.026) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.026) 1px, transparent 1px);
-      background-size: 62px 62px;
-      mask-image: radial-gradient(circle at 50% 0%, #000 0%, transparent 78%);
-      -webkit-mask-image: radial-gradient(circle at 50% 0%, #000 0%, transparent 78%);
-    }
-
-    .bg-noise {
-      position: absolute; inset: 0; opacity: 0.35;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
-    }
-
-    /* ---------- cursor spotlight ---------- */
-    .spotlight {
-      position: fixed; z-index: 1; inset: 0; pointer-events: none;
-      background: radial-gradient(340px circle at var(--mx, -200px) var(--my, -200px), rgba(124,157,255,0.09), transparent 65%);
-      transition: opacity 300ms ease;
-    }
-
-    /* ---------- scroll progress ---------- */
-    .progress {
-      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
-      background: var(--grad); z-index: 60;
-      box-shadow: 0 0 16px rgba(124, 157, 255, 0.6);
-    }
-
-    .shell { width: min(1200px, calc(100% - 44px)); margin: 0 auto; position: relative; z-index: 2; }
+    .btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--ink); }
+    .btn:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+    .btn svg { width: 17px; height: 17px; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { background: var(--blue-deep); }
 
     /* ---------- nav ---------- */
-    .nav {
-      position: sticky; top: 0; z-index: 50;
-      transition: padding 300ms ease, background 300ms ease, border-color 300ms ease;
-      border-bottom: 1px solid transparent;
-    }
-    .nav.scrolled {
-      background: rgba(11, 12, 18, 0.72);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--line);
-    }
-    .nav-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 20px; padding: 20px 0; transition: padding 300ms ease;
-    }
-    .nav.scrolled .nav-inner { padding: 13px 0; }
+    .nav { position: sticky; top: 0; z-index: 40; background: var(--paper); border-bottom: 2px solid var(--ink); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 0; }
     .logo { display: flex; align-items: center; gap: 12px; }
     .logo-badge {
-      display: grid; place-items: center; width: 40px; height: 40px;
-      border-radius: 12px; background: var(--grad); color: #0b0c12;
-      font-family: var(--display); font-weight: 700; font-size: 19px;
-      box-shadow: 0 8px 24px var(--glow-blue);
+      display: grid; place-items: center; width: 46px; height: 40px; flex: 0 0 auto;
+      background: var(--ink); color: #fff; border: 2px solid var(--green);
+      font-family: var(--head); font-weight: 900; font-size: 16px; letter-spacing: 0.04em;
     }
-    .logo-txt { display: grid; line-height: 1.15; }
-    .logo-txt b { font-size: 15px; font-weight: 700; letter-spacing: 0.01em; }
-    .logo-txt span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.22em; }
-    .nav-links { display: flex; align-items: center; gap: 30px; }
-    .nav-links a.link {
-      position: relative; font-size: 14px; font-weight: 500; color: var(--muted);
-      transition: color 200ms ease;
-    }
-    .nav-links a.link::after {
-      content: ""; position: absolute; left: 0; bottom: -6px; height: 2px; width: 0;
-      background: var(--grad); transition: width 240ms ease;
-    }
-    .nav-links a.link:hover { color: var(--text); }
-    .nav-links a.link:hover::after { width: 100%; }
-
-    .btn {
-      position: relative; display: inline-flex; align-items: center; gap: 9px;
-      padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: 14px;
-      cursor: pointer; border: 1px solid var(--line-strong); background: var(--surface);
-      color: var(--text); transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease, background 200ms ease;
-      overflow: hidden;
-    }
-    .btn:hover { transform: translateY(-2px); border-color: var(--line-strong); background: var(--surface-2); }
-    .btn-primary {
-      border: 0; color: #0b0c12; background: var(--grad); font-weight: 700;
-      box-shadow: 0 12px 30px var(--glow-blue);
-    }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 18px 44px var(--glow-violet); }
-    .btn svg { width: 17px; height: 17px; }
+    .logo-txt { display: grid; line-height: 1.1; }
+    .logo-txt b { font-family: var(--head); font-weight: 900; font-size: 17px; letter-spacing: 0.02em; }
+    .logo-txt span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.18em; font-weight: 600; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a.link { font-family: var(--head); font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink); }
+    .nav-links a.link:hover { color: var(--blue); }
 
     /* ---------- hero ---------- */
-    .hero { padding: 76px 0 40px; }
-    .tagline {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line);
-      background: var(--surface); font-size: 13px; color: var(--muted);
-      font-family: var(--label); letter-spacing: 0.02em;
-    }
-    .tagline .dot {
-      width: 8px; height: 8px; border-radius: 50%; background: var(--c4);
-      box-shadow: 0 0 0 0 rgba(94, 234, 212, 0.7); animation: pulse 2.4s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(94, 234, 212, 0.6); }
-      70% { box-shadow: 0 0 0 9px rgba(94, 234, 212, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(94, 234, 212, 0); }
-    }
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 48px; align-items: center; padding: 66px 0 40px; }
     h1.hero-title {
-      margin: 26px 0 0;
-      font-family: var(--display);
-      font-weight: 500;
-      font-size: clamp(52px, 10vw, 124px);
-      line-height: 0.98;
-      letter-spacing: -0.015em;
+      margin: 18px 0 0; font-family: var(--display); font-weight: 400;
+      font-size: clamp(50px, 9vw, 108px); line-height: 0.94; letter-spacing: 0.01em; text-transform: uppercase;
     }
-    h1.hero-title .grad {
-      background: var(--grad); -webkit-background-clip: text; background-clip: text;
-      color: transparent; font-style: italic; font-weight: 500;
+    .mark { position: relative; white-space: nowrap; }
+    .mark::before {
+      content: ""; position: absolute; left: -4px; right: -4px; bottom: 8%; height: 34%; z-index: -1;
+      background: var(--yellow); transform: rotate(-1.5deg);
     }
-    .hero-sub {
-      max-width: 640px; margin: 28px 0 0; font-size: clamp(17px, 2.4vw, 20px);
-      color: var(--muted); line-height: 1.65;
-    }
-    .hero-roles { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
-    .role-chip {
-      padding: 7px 15px; border-radius: 999px; border: 1px solid var(--line);
-      font-size: 13px; font-weight: 500; color: var(--text); background: var(--grad-soft);
-    }
-    .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+    .hero-sub { max-width: 560px; margin: 26px 0 0; font-size: 18px; line-height: 1.65; color: var(--muted); }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
 
-    .hero-stats {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
-      margin-top: 64px; padding: 30px; border-radius: var(--radius);
-      border: 1px solid var(--line); background: var(--surface); backdrop-filter: blur(10px);
-    }
-    .stat .num {
-      font-family: var(--display); font-weight: 600; font-size: clamp(34px, 5vw, 48px);
-      line-height: 1; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .stat .lbl { margin-top: 8px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; }
+    .statcard { border: 2px solid var(--ink); background: #fff; box-shadow: var(--shadow-lg); }
+    .statcard-head { padding: 12px 18px; background: var(--ink); color: #fff; font-family: var(--head); font-weight: 800; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; }
+    .stat { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 16px 18px; border-bottom: 1px solid var(--grid); }
+    .stat:last-child { border-bottom: 0; }
+    .stat .n { font-family: var(--display); font-weight: 400; font-size: 40px; line-height: 1; color: var(--blue); }
+    .stat .l { font-family: var(--head); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); text-align: right; }
 
-    /* ---------- marquee ---------- */
-    .marquee-wrap {
-      margin: 74px 0 20px; padding: 22px 0; position: relative; z-index: 2;
-      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden;
-      -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-      mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-    }
-    .marquee { display: flex; gap: 56px; width: max-content; animation: scroll 30s linear infinite; }
-    .marquee-wrap:hover .marquee { animation-play-state: paused; }
-    .marquee span {
-      font-family: var(--display); font-style: italic; font-size: 26px; color: var(--muted);
-      white-space: nowrap; display: inline-flex; align-items: center; gap: 56px;
-    }
-    .marquee span::after { content: "\2022"; color: var(--c2); font-size: 15px; font-style: normal; }
-    @keyframes scroll { to { transform: translateX(-50%); } }
+    /* ---------- brand strip ---------- */
+    .strip { border: 2px solid var(--ink); background: #d6f5ef; box-shadow: var(--shadow); margin: 8px 0 0; padding: 16px 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 30px; }
+    .strip .lbl { font-family: var(--head); font-weight: 800; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); }
+    .strip .names { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+    .strip .names span { font-family: var(--head); font-weight: 700; font-size: 16px; color: var(--ink); }
 
     /* ---------- sections ---------- */
-    .section { padding: 78px 0; position: relative; z-index: 2; }
-    .sec-head { margin-bottom: 38px; }
-    .kicker {
-      font-family: var(--label); font-size: 12px; font-weight: 600; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--c2);
-    }
-    .sec-title {
-      margin: 14px 0 0; font-family: var(--display); font-weight: 500;
-      font-size: clamp(32px, 5.5vw, 56px); line-height: 1.04; letter-spacing: -0.015em;
-    }
+    .section { padding: 66px 0; position: relative; z-index: 1; }
+    .sec-head { margin-bottom: 34px; }
+    .sec-title { margin: 12px 0 0; font-family: var(--display); font-weight: 400; font-size: clamp(30px, 5vw, 56px); line-height: 1.0; letter-spacing: 0.01em; text-transform: uppercase; }
     .sec-lead { max-width: 620px; margin: 16px 0 0; color: var(--muted); font-size: 17px; }
 
     /* ---------- services ---------- */
-    .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-    .svc {
-      position: relative; padding: 28px 24px; border-radius: var(--radius);
-      border: 1px solid var(--line); background: var(--surface); overflow: hidden;
-      transition: transform 260ms ease, border-color 260ms ease;
-    }
-    .svc::before { content: ""; position: absolute; inset: 0; opacity: 0; background: var(--grad-soft); transition: opacity 300ms ease; }
-    .svc:hover { transform: translateY(-8px); border-color: var(--line-strong); }
-    .svc:hover::before { opacity: 1; }
-    .svc > * { position: relative; }
-    .svc-ico {
-      display: grid; place-items: center; width: 50px; height: 50px; border-radius: 14px;
-      margin-bottom: 20px; background: var(--grad-soft); border: 1px solid var(--line); color: var(--c2);
-    }
+    .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .svc { padding: 24px 22px; border: 2px solid var(--ink); background: #fff; box-shadow: var(--shadow); transition: transform 130ms ease, box-shadow 130ms ease; }
+    .svc:hover { transform: translate(-3px, -3px); box-shadow: var(--shadow-lg); }
+    .svc-ico { display: grid; place-items: center; width: 50px; height: 50px; margin-bottom: 18px; border: 2px solid var(--ink); color: #fff; }
     .svc-ico svg { width: 24px; height: 24px; }
-    .svc h3 { margin: 0 0 8px; font-family: var(--display); font-weight: 600; font-size: 21px; }
+    .svc h3 { margin: 0 0 8px; font-family: var(--head); font-weight: 800; font-size: 19px; line-height: 1.2; }
     .svc p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
 
     /* ---------- controls ---------- */
-    .controls {
-      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-      gap: 16px; margin-bottom: 34px;
-    }
-    .search { position: relative; flex: 1 1 260px; max-width: 360px; }
-    .search svg {
-      position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
-      width: 18px; height: 18px; color: var(--faint);
-    }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 30px; }
+    .search { position: relative; flex: 1 1 260px; max-width: 380px; }
+    .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
     .search input {
-      width: 100%; height: 50px; padding: 0 18px 0 48px; border-radius: 999px;
-      border: 1px solid var(--line); background: var(--surface); color: var(--text);
-      font: 500 15px var(--sans); outline: none;
-      transition: border-color 200ms ease, box-shadow 200ms ease, background 200ms ease;
+      width: 100%; height: 50px; padding: 0 16px 0 44px; border: 2px solid var(--ink); background: #fff;
+      color: var(--ink); font: 600 15px var(--head); outline: none; box-shadow: var(--shadow);
+      transition: box-shadow 130ms ease, transform 130ms ease;
     }
-    .search input::placeholder { color: var(--faint); }
-    .search input:focus {
-      border-color: var(--c1); background: var(--surface-2);
-      box-shadow: 0 0 0 4px rgba(124, 157, 255, 0.15);
-    }
+    .search input::placeholder { color: var(--faint); font-weight: 500; }
+    .search input:focus { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--blue); }
     .filters { display: flex; flex-wrap: wrap; gap: 8px; }
     .chip {
-      padding: 10px 18px; border-radius: 999px; border: 1px solid var(--line);
-      background: var(--surface); color: var(--muted); cursor: pointer;
-      font: 600 13px var(--sans); transition: all 200ms ease;
+      padding: 10px 16px; border: 2px solid var(--ink); background: #fff; color: var(--ink); cursor: pointer;
+      font: 700 13px var(--head); letter-spacing: 0.04em; text-transform: uppercase; box-shadow: 3px 3px 0 var(--ink);
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, color 120ms ease;
     }
-    .chip:hover { color: var(--text); border-color: var(--line-strong); transform: translateY(-1px); }
-    .chip.active { color: #0b0c12; background: var(--grad); border-color: transparent; box-shadow: 0 8px 22px var(--glow-blue); }
+    .chip:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+    .chip.active { background: var(--blue); color: #fff; }
 
-    /* ---------- project grid ---------- */
+    /* ---------- work grid ---------- */
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .card {
-      position: relative; display: flex; flex-direction: column;
-      padding: 26px; border-radius: var(--radius); border: 1px solid var(--line);
-      background: var(--surface); overflow: hidden; min-height: 230px;
-      transform-style: preserve-3d; transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+      display: flex; flex-direction: column; padding: 22px; min-height: 224px;
+      border: 2px solid var(--ink); background: #fff; box-shadow: var(--shadow);
+      transition: transform 130ms ease, box-shadow 130ms ease;
     }
     .card.hide { display: none; }
-    .card::before {
-      content: ""; position: absolute; inset: 0; opacity: 0; transition: opacity 300ms ease;
-      background: radial-gradient(420px circle at var(--cx, 50%) var(--cy, 0%), rgba(124,157,255,0.14), rgba(167,139,250,0.1) 42%, transparent 70%);
-    }
-    .card:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
-    .card:hover::before { opacity: 1; }
-    .card > * { position: relative; z-index: 1; }
-    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
-    .badge {
-      font-family: var(--label); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line);
-      color: var(--c4); background: rgba(94, 234, 212, 0.08);
-    }
-    .card-arrow {
-      display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
-      border: 1px solid var(--line); color: var(--muted); flex: 0 0 auto;
-      transition: transform 240ms ease, background 240ms ease, color 240ms ease, border-color 240ms ease;
-    }
-    .card:hover .card-arrow { background: var(--grad); color: #0b0c12; border-color: transparent; transform: rotate(-45deg); }
-    .card-arrow svg { width: 16px; height: 16px; }
-    .card h3 {
-      margin: 0; font-family: var(--display); font-weight: 600; font-size: 21px;
-      line-height: 1.2; letter-spacing: -0.005em;
-    }
-    .card .org { margin-top: 12px; font-size: 13px; color: var(--muted); }
-    .card .org b { color: var(--text); font-weight: 600; }
-    .card-actions { margin-top: auto; padding-top: 22px; display: flex; gap: 10px; }
-    .mini {
-      padding: 9px 16px; border-radius: 999px; font: 600 12.5px var(--sans);
-      cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--text);
-      transition: all 180ms ease;
-    }
-    .mini:hover { border-color: var(--line-strong); background: var(--surface-2); transform: translateY(-1px); }
-    .mini.solid { background: var(--text); color: #0b0c12; border-color: transparent; }
-    .mini.solid:hover { background: #fff; }
+    .card:hover { transform: translate(-4px, -4px); box-shadow: var(--shadow-lg); }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+    .m-index { font-family: var(--head); font-weight: 800; font-size: 13px; color: var(--faint); }
+    .badge { font-family: var(--head); font-weight: 800; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 10px; border: 2px solid var(--ink); background: var(--pc, #e6ebff); color: var(--ink); }
+    .card h3 { margin: 0; font-family: var(--head); font-weight: 800; font-size: 20px; line-height: 1.2; }
+    .card .org { margin-top: 10px; font-size: 14px; color: var(--muted); }
+    .card .org b { color: var(--ink); font-weight: 700; }
+    .card-actions { margin-top: auto; padding-top: 20px; display: flex; gap: 10px; }
+    .mini { padding: 9px 15px; font: 700 12.5px var(--head); letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; border: 2px solid var(--ink); background: #fff; color: var(--ink); box-shadow: 3px 3px 0 var(--ink); transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, color 120ms ease; }
+    .mini:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+    .mini.solid { background: var(--blue); color: #fff; }
+    .mini.solid:hover { background: var(--blue-deep); }
 
-    .empty {
-      display: none; text-align: center; padding: 60px 0; color: var(--muted);
-      font-size: 16px; grid-column: 1 / -1;
-    }
+    .empty { display: none; grid-column: 1/-1; text-align: center; padding: 54px 0; color: var(--muted); font-family: var(--head); font-weight: 700; }
     .empty.show { display: block; }
 
     /* ---------- about ---------- */
-    .about-wrap {
-      display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px;
-      padding: 44px; border-radius: 28px; border: 1px solid var(--line);
-      background: var(--grad-soft); backdrop-filter: blur(10px);
-    }
-    .about-wrap p.big {
-      margin: 0; font-family: var(--display); font-weight: 500; font-style: italic;
-      font-size: clamp(24px, 3.4vw, 36px); line-height: 1.28; letter-spacing: -0.005em;
-    }
-    .about-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 16px; align-content: start; }
-    .about-list li { display: flex; gap: 14px; color: var(--muted); font-size: 15px; line-height: 1.5; }
-    .about-list li svg { flex: 0 0 auto; width: 22px; height: 22px; color: var(--c2); margin-top: 2px; }
+    .about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; padding: 40px; border: 2px solid var(--ink); background: #fff; box-shadow: var(--shadow-lg); }
+    .about p.big { margin: 0; font-family: var(--head); font-weight: 800; font-size: clamp(23px, 3.2vw, 34px); line-height: 1.28; }
+    .about p.big .hl { background: var(--yellow); padding: 0 4px; }
+    .about-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; align-content: start; }
+    .about-list li { display: flex; gap: 12px; color: var(--muted); font-size: 15px; line-height: 1.5; }
+    .about-list li .k { color: var(--blue); font-weight: 800; }
 
     /* ---------- contact ---------- */
-    .contact { text-align: center; padding: 90px 0; position: relative; z-index: 2; }
-    .contact h2 {
-      margin: 14px auto 0; max-width: 780px; font-family: var(--display); font-weight: 500;
-      font-size: clamp(36px, 7vw, 74px); line-height: 1.04; letter-spacing: -0.015em;
-    }
-    .contact h2 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; font-style: italic; }
-    .contact p { margin: 20px auto 0; max-width: 540px; color: var(--muted); font-size: 17px; }
-    .contact-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 34px; }
+    .contact { text-align: center; padding: 84px 0; position: relative; z-index: 1; }
+    .contact h2 { margin: 12px auto 0; max-width: 820px; font-family: var(--display); font-weight: 400; font-size: clamp(36px, 7vw, 82px); line-height: 0.98; letter-spacing: 0.01em; text-transform: uppercase; }
+    .contact p { margin: 22px auto 0; max-width: 520px; color: var(--muted); font-size: 17px; }
+    .contact-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 30px; }
 
-    footer { border-top: 1px solid var(--line); padding: 30px 0 44px; position: relative; z-index: 2; }
-    .foot-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
-    .foot-inner .logo-txt b { font-size: 14px; }
-    .foot-inner small { color: var(--faint); font-size: 13px; }
+    /* ---------- footer ---------- */
+    footer { position: relative; z-index: 1; background: var(--ink); color: #fff; margin-top: 40px; }
+    .foot-inner { display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 46px 0; text-align: center; }
+    .foot-inner .logo-badge { background: var(--ink); }
+    .foot-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; }
+    .foot-links a { font-family: var(--head); font-weight: 600; font-size: 15px; color: #d6d6d0; }
+    .foot-links a:hover { color: var(--green); }
+    .foot-inner small { color: #8a8a84; font-size: 13px; }
 
     /* ---------- modal ---------- */
-    .modal {
-      position: fixed; inset: 0; z-index: 80; display: none;
-      align-items: center; justify-content: center; padding: 24px;
-      background: rgba(5, 6, 12, 0.7); backdrop-filter: blur(8px);
-    }
-    .modal.open { display: flex; animation: fade 220ms ease; }
-    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-    .dialog {
-      width: min(620px, 100%); padding: 34px; border-radius: 26px;
-      border: 1px solid var(--line-strong); background: linear-gradient(180deg, #14151f, #0c0d15);
-      box-shadow: var(--shadow); animation: pop 260ms cubic-bezier(0.2, 0.9, 0.3, 1.2);
-    }
-    @keyframes pop { from { transform: translateY(24px) scale(0.96); opacity: 0; } to { transform: none; opacity: 1; } }
-    .dialog-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
-    .dialog .badge { margin-bottom: 16px; }
-    .dialog h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: clamp(26px, 4vw, 34px); line-height: 1.14; }
-    .close {
-      flex: 0 0 auto; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
-      border: 1px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer;
-      font-size: 22px; transition: all 200ms ease;
-    }
-    .close:hover { border-color: var(--c2); color: var(--c2); transform: rotate(90deg); }
-    .dialog .meta { margin: 18px 0 0; font-size: 13px; color: var(--muted); font-family: var(--label); letter-spacing: 0.04em; }
-    .dialog .desc { margin: 14px 0 0; color: var(--text); font-size: 16px; line-height: 1.6; opacity: 0.9; }
-    .dialog-actions { margin-top: 26px; }
+    .modal { position: fixed; inset: 0; z-index: 60; display: none; align-items: center; justify-content: center; padding: 24px; background: rgba(17,17,17,0.4); }
+    .modal.open { display: flex; }
+    .dialog { width: min(600px, 100%); padding: 30px; border: 2px solid var(--ink); background: #fff; box-shadow: var(--shadow-lg); animation: pop 180ms ease; }
+    @keyframes pop { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+    .dialog-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+    .dialog .badge { margin-bottom: 14px; }
+    .dialog h3 { margin: 0; font-family: var(--head); font-weight: 900; font-size: clamp(24px, 4vw, 32px); line-height: 1.14; }
+    .close { flex: 0 0 auto; display: grid; place-items: center; width: 40px; height: 40px; border: 2px solid var(--ink); background: #fff; color: var(--ink); cursor: pointer; font-size: 22px; box-shadow: 3px 3px 0 var(--ink); }
+    .close:hover { background: var(--ink); color: #fff; }
+    .dialog .meta { margin: 16px 0 0; font-family: var(--head); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-size: 13px; }
+    .dialog .desc { margin: 12px 0 0; color: var(--ink); font-size: 16px; line-height: 1.6; }
+    .dialog-actions { margin-top: 24px; }
 
     /* ---------- reveal ---------- */
-    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 700ms ease, transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 550ms ease, transform 550ms cubic-bezier(0.2,0.8,0.2,1); }
     .reveal.in { opacity: 1; transform: none; }
 
     /* ---------- responsive ---------- */
     @media (max-width: 940px) {
+      .hero { grid-template-columns: 1fr; }
+      .statcard { max-width: 380px; }
       .services { grid-template-columns: repeat(2, 1fr); }
       .grid { grid-template-columns: repeat(2, 1fr); }
-      .about-wrap { grid-template-columns: 1fr; gap: 28px; padding: 32px; }
-      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .about { grid-template-columns: 1fr; gap: 26px; padding: 28px; }
     }
-    @media (max-width: 640px) {
+    @media (max-width: 620px) {
       .nav-links .link { display: none; }
-      .services { grid-template-columns: 1fr; }
-      .grid { grid-template-columns: 1fr; }
+      .services, .grid { grid-template-columns: 1fr; }
       .controls { flex-direction: column; align-items: stretch; }
       .search { max-width: none; }
-      .filters { justify-content: flex-start; }
-      .hero { padding-top: 46px; }
-      .marquee span { font-size: 20px; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+      *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
       .reveal { opacity: 1; transform: none; }
     }
   </style>
 </head>
 <body>
-  <div class="bg-fx" aria-hidden="true">
-    <div class="bg-grid"></div>
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="blob b3"></div>
-    <div class="blob b4"></div>
-    <div class="bg-noise"></div>
-  </div>
-  <div class="spotlight" aria-hidden="true"></div>
-  <div class="progress" id="progress" aria-hidden="true"></div>
-
-  <header class="nav" id="nav">
+  <header class="nav">
     <div class="shell nav-inner">
       <a class="logo" href="#top" aria-label="Alpana Jha home">
         <span class="logo-badge">AJ</span>
-        <span class="logo-txt"><b>Alpana Jha</b><span>Content</span></span>
+        <span class="logo-txt"><b>ALPANA JHA</b><span>Content</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a class="link" href="#services">What I do</a>
+        <a class="link" href="#services">Services</a>
         <a class="link" href="#work">Work</a>
         <a class="link" href="#about">About</a>
         <a class="btn btn-primary" href="mailto:alpanajha76@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8"/><path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2"/><path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           Say hello
         </a>
       </nav>
@@ -464,64 +250,59 @@
 
   <main id="top" class="shell">
     <section class="hero">
-      <span class="tagline"><span class="dot"></span> Open to content work in 2026</span>
-      <h1 class="hero-title">Words people<br><span class="grad">actually read.</span></h1>
-      <p class="hero-sub">I'm Alpana Jha, a content strategist and writer with 10 years of experience. I help brands say what they mean in a way people actually want to read. That covers case studies, blog posts, campaigns, and the strategy that holds it all together.</p>
-      <div class="hero-roles">
-        <span class="role-chip">Content Strategy</span>
-        <span class="role-chip">Editorial Writing</span>
-        <span class="role-chip">Brand Voice</span>
-        <span class="role-chip">Social &amp; CMS</span>
-      </div>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#work">
-          See my work
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a class="btn" href="mailto:alpanajha76@gmail.com">Say hello</a>
+      <div>
+        <span class="eyebrow">Content Portfolio</span>
+        <h1 class="hero-title">Words people actually <span class="mark">read.</span></h1>
+        <p class="hero-sub">I'm Alpana Jha, a content strategist and writer. I help brands say what they mean in a way people actually want to read. That covers case studies, blog posts, campaigns, and the strategy that holds it all together.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#work">
+            See my work
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn" href="mailto:alpanajha76@gmail.com">Say hello</a>
+        </div>
       </div>
 
-      <div class="hero-stats reveal">
-        <div class="stat"><div class="num" data-count="15">0</div><div class="lbl">Writing samples</div></div>
-        <div class="stat"><div class="num" data-count="8">0</div><div class="lbl">Content formats</div></div>
-        <div class="stat"><div class="num" data-count="6">0</div><div class="lbl">Brands worked with</div></div>
-        <div class="stat"><div class="num" data-count="5">0</div><div class="lbl">Tools &amp; channels</div></div>
-      </div>
+      <aside class="statcard reveal" aria-label="Portfolio at a glance">
+        <div class="statcard-head">At a glance</div>
+        <div class="stat"><span class="n" data-count="13">0</span><span class="l">Writing<br>samples</span></div>
+        <div class="stat"><span class="n" data-count="8">0</span><span class="l">Content<br>formats</span></div>
+        <div class="stat"><span class="n" data-count="6">0</span><span class="l">Brands<br>worked with</span></div>
+        <div class="stat"><span class="n" data-count="5">0</span><span class="l">Tools &amp;<br>channels</span></div>
+      </aside>
     </section>
-  </main>
 
-  <div class="marquee-wrap" aria-label="Brands worked with">
-    <div class="marquee" id="marquee">
-      <span>AskMia</span><span>Aumni Tech Works</span><span>GKM IT</span><span>Spark Eighteen</span><span>Cryovita Logistics</span><span>FCI CCM VARTA</span>
-      <span>AskMia</span><span>Aumni Tech Works</span><span>GKM IT</span><span>Spark Eighteen</span><span>Cryovita Logistics</span><span>FCI CCM VARTA</span>
+    <div class="strip reveal">
+      <span class="lbl">Trusted by</span>
+      <div class="names">
+        <span>AskMia</span><span>Aumni Tech Works</span><span>GKM IT</span><span>Spark Eighteen</span><span>Cryovita Logistics</span><span>FCI CCM VARTA</span>
+      </div>
     </div>
-  </div>
 
-  <main class="shell">
     <section id="services" class="section">
       <div class="sec-head reveal">
-        <span class="kicker">01 &middot; What I do</span>
-        <h2 class="sec-title">I write it, shape it,<br>and get it published.</h2>
-       
+        <span class="eyebrow">What I do</span>
+        <h2 class="sec-title">I write it, shape it, and get it published.</h2>
+        <p class="sec-lead">Give me a rough brief and I can take it all the way to a live page. I work across most formats and channels.</p>
       </div>
       <div class="services">
         <article class="svc reveal">
-          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div>
+          <div class="svc-ico" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div>
           <h3>Case studies &amp; whitepapers</h3>
           <p>Real results on retention, savings, and ROI, written so buyers believe them.</p>
         </article>
         <article class="svc reveal">
-          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h9l4 4v12H6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12h7M9 16h7M9 8h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <div class="svc-ico" style="background:var(--green)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h9l4 4v12H6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12h7M9 16h7M9 8h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
           <h3>Blogs &amp; articles</h3>
           <p>Longer pieces that make a brand sound like it knows its field, and that people can find on search.</p>
         </article>
         <article class="svc reveal">
-          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10v4l14 4V6L4 10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 14.5v4a2 2 0 0 0 2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <div class="svc-ico" style="background:#d6247a"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10v4l14 4V6L4 10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 14.5v4a2 2 0 0 0 2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
           <h3>Campaigns &amp; social</h3>
           <p>Scripts, carousels, and posts that keep one steady voice across every channel.</p>
         </article>
         <article class="svc reveal">
-          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M4 9.5h16M9.5 9.5V20" stroke="currentColor" stroke-width="1.7"/></svg></div>
+          <div class="svc-ico" style="background:#6b2bff"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 9.5h16M9.5 9.5V20" stroke="currentColor" stroke-width="1.8"/></svg></div>
           <h3>Strategy &amp; CMS</h3>
           <p>Content plans, Webflow publishing, and keeping the CMS tidy week to week.</p>
         </article>
@@ -530,9 +311,9 @@
 
     <section id="work" class="section">
       <div class="sec-head reveal">
-        <span class="kicker">02 &middot; Selected work</span>
+        <span class="eyebrow">Selected work</span>
         <h2 class="sec-title">A few things I've written.</h2>
-        <p class="sec-lead">Fifteen live samples across eight formats. Search, filter, or open any one to read the full piece.</p>
+        <p class="sec-lead">A selection of live samples across formats. Search, filter, or open any one to read the full piece.</p>
       </div>
 
       <div class="controls reveal">
@@ -554,21 +335,30 @@
       <p class="empty" id="empty">Nothing matches that search. Try another word or filter.</p>
     </section>
 
-   
+    <section id="about" class="section">
+      <div class="about reveal">
+        <p class="big">I like working with brands that want to sound clearer and explain their work in a way people <span class="hl">actually get</span>, without the fluff.</p>
+        <ul class="about-list">
+          <li><span class="k">01</span> Case studies, blogs, whitepapers, release notes, and scripts.</li>
+          <li><span class="k">02</span> Content strategy decks for campaigns and brand work.</li>
+          <li><span class="k">03</span> Social and CMS across LinkedIn, Webflow, Google Docs, Drive, and Slides.</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <section class="contact" id="contact">
     <div class="shell">
-      <span class="kicker">03 &middot; Get in touch</span>
-      <h2>Got a story worth <span class="grad">telling well?</span></h2>
+      <span class="eyebrow">Get in touch</span>
+      <h2>Got a story worth telling well?</h2>
       <p>A case study, a campaign, or a whole content system. Whatever it is, I'd be glad to help you make it clear and worth reading.</p>
       <div class="contact-cta">
         <a class="btn btn-primary" href="mailto:alpanajha76@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8"/><path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2"/><path d="m5 7 7 6 7-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           alpanajha76@gmail.com
         </a>
         <a class="btn" href="tel:+919890613541">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h3l2 5-2 1a11 11 0 0 0 5 5l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
           +91 98906 13541
         </a>
       </div>
@@ -577,11 +367,15 @@
 
   <footer>
     <div class="shell foot-inner">
-      <div class="logo">
-        <span class="logo-badge">AJ</span>
-        <span class="logo-txt"><b>Alpana Jha</b><span>Content Portfolio</span></span>
+      <span class="logo-badge">AJ</span>
+      <div class="foot-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:alpanajha76@gmail.com">Email</a>
+        <a href="tel:+919890613541">Call</a>
       </div>
-      <small>&copy; 2026 Alpana Jha &middot; Made to be read.</small>
+      <small>© 2026 Alpana Jha · Content Portfolio</small>
     </div>
   </footer>
 
@@ -599,19 +393,19 @@
       <div class="dialog-actions">
         <a class="btn btn-primary" id="m-link" target="_blank" rel="noopener noreferrer">
           Open sample
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
     </div>
   </div>
 
   <script>
+    const COLORS = { writing: "#e6ebff", strategy: "#efe6ff", social: "#ffe6f2", cms: "#e3f9e0" };
+
     const projects = [
       { title: "How a California Plan Used Mia to Reduce Churn, Cut Costs and Retain Members", org: "AskMia", cat: "Case Study", groups: ["writing"], tags: "healthcare medicare retention churn", summary: "A healthcare case study about keeping members from leaving, cutting costs, and giving them a better experience in Medicare Advantage.", url: "https://www.resources.askmia.com/case-studies/how-a-california-plan-used-mia-to-reduce-churn-cut-costs-and-retain-members" },
-      { title: "How Aumni Helped Build a Stronger Team", org: "Aumni Tech Works", cat: "Case Study", groups: ["writing"], tags: "talent team building hiring", summary: "A case study on how Aumni helped a client build a stronger team through better hiring and closer collaboration.", url: "https://www.aumnitechworks.com/case-studies/how-aumni-helped-solve-build-a-stronger-team" },
       { title: "Offshoring vs Outsourcing: The Smart Move for 2025", org: "Aumni Tech Works", cat: "Whitepaper", groups: ["writing"], tags: "offshoring outsourcing business", summary: "A long whitepaper weighing offshoring against outsourcing as a business call for 2025.", url: "https://www.aumnitechworks.com/white-paper/offshoring-vs-outsourcing-the-smart-move-for-2025" },
       { title: "Retention by Design: An Experience-Mapping Strategy to Prevent Member Drop-off", org: "AskMia", cat: "Blog", groups: ["writing"], tags: "thought leadership medicare retention experience mapping", summary: "An article on how experience mapping can stop members from dropping off in Medicare Advantage.", url: "https://www.resources.askmia.com/blogs/retention-by-design-the-proven-experience-mapping-strategy-to-prevent-member-drop-off-in-medicare-advantage" },
-      { title: "AI Redefining GCC Talent and Skills", org: "Aumni Tech Works", cat: "Blog", groups: ["writing"], tags: "ai gcc talent skills industry", summary: "An industry blog on how AI is changing what GCC teams need in talent and skills.", url: "https://www.aumnitechworks.com/blogs/ai-redefining-gcc-talent-skills" },
       { title: "FCI CCM VARTA Video Script", org: "FCI CCM VARTA", cat: "Script", groups: ["writing"], tags: "script campaign video editorial google doc", summary: "A video script written for the FCI CCM VARTA campaign.", url: "https://docs.google.com/document/d/1ihXjcNOBZbxw1vStwO9RaU80c8q0HgH-Mmxc8aeIXRk/edit?usp=sharing" },
       { title: "FCI CCM VARTA Editorial", org: "FCI CCM VARTA", cat: "Editorial", groups: ["writing"], tags: "editorial campaign google doc", summary: "Editorial content written for FCI CCM VARTA, shared as a Google Doc.", url: "https://docs.google.com/document/d/1dP14o67XHCVFXbfJJ91kpk9MTfb4KgS5PXE9jHJVpl4/edit?usp=sharing" },
       { title: "FCI CCM LinkedIn Carousel", org: "FCI CCM VARTA", cat: "Social Creative", groups: ["social"], tags: "carousel linkedin campaign google drive creative", summary: "A LinkedIn carousel put together for the FCI CCM campaign.", url: "https://drive.google.com/file/d/1CHRVjwnQ-RNpERB2kXzduGdfvKqVRwji/view?usp=sharing" },
@@ -630,19 +424,22 @@
     const chips = Array.from(document.querySelectorAll(".chip"));
     let activeFilter = "all";
 
+    function pad(n) { return String(n + 1).padStart(2, "0"); }
+
     function cardHTML(p, i) {
-      return `<article class="card reveal" style="transition-delay:${(i % 6) * 45}ms"
+      const pc = COLORS[p.groups[0]] || "#e6ebff";
+      return `<article class="card reveal" style="transition-delay:${(i % 6) * 40}ms"
           data-groups="${p.groups.join(" ")}"
           data-search="${(p.title + " " + p.org + " " + p.cat + " " + p.tags).toLowerCase()}">
         <div class="card-top">
-          <span class="badge">${p.cat}</span>
-          <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="m-index">${pad(i)}</span>
+          <span class="badge" style="--pc:${pc}">${p.cat}</span>
         </div>
         <h3>${p.title}</h3>
         <div class="org"><b>${p.org}</b></div>
         <div class="card-actions">
           <button class="mini" data-idx="${i}" type="button">Details</button>
-          <a class="mini solid" href="${p.url}" target="_blank" rel="noopener noreferrer">Open it</a>
+          <a class="mini solid" href="${p.url}" target="_blank" rel="noopener noreferrer">View</a>
         </div>
       </article>`;
     }
@@ -685,6 +482,7 @@
       lastFocus = trigger;
       mTitle.textContent = p.title;
       mBadge.textContent = p.cat;
+      mBadge.style.setProperty("--pc", COLORS[p.groups[0]] || "#e6ebff");
       mMeta.textContent = p.org;
       mDesc.textContent = p.summary;
       mLink.href = p.url;
@@ -708,68 +506,30 @@
     /* reveal on scroll */
     if ("IntersectionObserver" in window) {
       const io = new IntersectionObserver((entries) => {
-        entries.forEach((en) => {
-          if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
-        });
-      }, { threshold: 0.12, rootMargin: "0px 0px -50px 0px" });
+        entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+      }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
       document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
     } else {
       document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
     }
 
-    /* count-up stats */
+    /* count-up */
     const counters = document.querySelectorAll("[data-count]");
-    const cObserver = new IntersectionObserver((entries) => {
+    const cObs = new IntersectionObserver((entries) => {
       entries.forEach((en) => {
         if (!en.isIntersecting) return;
-        const el = en.target;
-        const target = Number(el.dataset.count);
-        const suffix = el.dataset.suffix || "";
-        const dur = 1400; const start = performance.now();
+        const el = en.target; const target = Number(el.dataset.count);
+        const dur = 1100; const start = performance.now();
         function tick(now) {
           const t = Math.min((now - start) / dur, 1);
-          const eased = 1 - Math.pow(1 - t, 3);
-          el.textContent = Math.round(eased * target) + suffix;
+          el.textContent = Math.round((1 - Math.pow(1 - t, 3)) * target);
           if (t < 1) requestAnimationFrame(tick);
         }
         requestAnimationFrame(tick);
-        cObserver.unobserve(el);
+        cObs.unobserve(el);
       });
     }, { threshold: 0.6 });
-    counters.forEach((c) => cObserver.observe(c));
-
-    /* cursor spotlight + card tilt */
-    const spotlight = document.querySelector(".spotlight");
-    const fine = window.matchMedia("(pointer: fine)").matches;
-    if (fine) {
-      window.addEventListener("pointermove", (e) => {
-        spotlight.style.setProperty("--mx", e.clientX + "px");
-        spotlight.style.setProperty("--my", e.clientY + "px");
-      });
-      grid.addEventListener("pointermove", (e) => {
-        const card = e.target.closest(".card");
-        if (!card) return;
-        const r = card.getBoundingClientRect();
-        card.style.setProperty("--cx", (e.clientX - r.left) + "px");
-        card.style.setProperty("--cy", (e.clientY - r.top) + "px");
-        const rx = ((e.clientY - r.top) / r.height - 0.5) * -6;
-        const ry = ((e.clientX - r.left) / r.width - 0.5) * 6;
-        card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
-      });
-      cards.forEach((c) => c.addEventListener("pointerleave", () => { c.style.transform = ""; }));
-    }
-
-    /* nav shrink + scroll progress */
-    const nav = document.getElementById("nav");
-    const progress = document.getElementById("progress");
-    function onScroll() {
-      const y = window.scrollY;
-      nav.classList.toggle("scrolled", y > 24);
-      const h = document.documentElement.scrollHeight - window.innerHeight;
-      progress.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
+    counters.forEach((c) => cObs.observe(c));
   </script>
 </body>
 </html>
